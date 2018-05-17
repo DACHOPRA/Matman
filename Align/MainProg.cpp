@@ -1,10 +1,11 @@
-#include "matrix.h"
+#include "vectors.h"
 
 int main() {
 	//code
-	int n, rows, columns;
+	int n, rows, columns, nofPos, nofVec;
 	cin >> n;
 	vector<Matrix<int>> arr;
+	vector<Pos> posrr;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> rows >> columns;
@@ -45,8 +46,18 @@ int main() {
 				}
 			//}
 		}
-	 }
+	};
 	
+	cin >> nofPos >> nofVec;
+	for (int i = 0; i < nofPos; i++)
+	{
+		Pos A;
+		A.v.read();
+		posrr.push_back(A);
+		printf("\nThe input Matrix number %d is\n", i);
+		posrr[i].v.print();
+	};
+
 	
 	return 0;
 }

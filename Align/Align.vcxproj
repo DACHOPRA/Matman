@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="exceptions.h" />
     <ClInclude Include="matrix.h" />
+    <ClInclude Include="vectors.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainProg.cpp" />
