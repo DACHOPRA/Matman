@@ -5,7 +5,7 @@ int main() {
 	int n, rows, columns, nofPos, nofVec;
 	cin >> n;
 	vector<Matrix<int>> arr;
-	vector<Pos> posrr;
+	//vector<Pos> posrr;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> rows >> columns;
@@ -48,7 +48,7 @@ int main() {
 		}
 	};
 	
-	cin >> nofPos >> nofVec;
+	/*cin >> nofPos >> nofVec;
 	for (int i = 0; i < nofPos; i++)
 	{
 		Pos A;
@@ -56,7 +56,10 @@ int main() {
 		posrr.push_back(A);
 		printf("\nThe input Matrix number %d is\n", i);
 		posrr[i].v.print();
-	};
+	};*/
+	Matrix<double> vec(3, 1);
+	vec.read();
+	vec.print();
 
 	
 	return 0;

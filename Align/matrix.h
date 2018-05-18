@@ -11,7 +11,8 @@ struct Matrix
 {
 	int row, col;
 	std::vector<vector<T>> data;
-	Matrix(int r, int c): row(r),col(c),data(row, std::vector<T>(col)) {};
+	Matrix(): row(0),col(0), data(row, std::vector<T>(col)) {};
+	Matrix(const int r,const int c): row(r),col(c),data(row, std::vector<T>(col)) {};
 	std::vector<T> & operator[](int i)
 	{
 		return data[i];

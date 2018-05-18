@@ -3,11 +3,11 @@
 
 #include"matrix.h"
 
-struct PhyVectors
-{
-	Matrix<double> V(x,y);
+struct phyvectors
+{   
+	Matrix<double> v(3,1);
 	
-} Vec, Pos;
+} vec, pos;
 
 
 #endif
